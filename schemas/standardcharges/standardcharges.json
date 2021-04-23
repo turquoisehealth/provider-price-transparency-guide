@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "standardcharges": {
+      "type": "object",
+      "properties": {
+        "description": { "type": "string" },
+        "billing_code_type": { "enum": [ "CPT", "HCPCS", "ICD", "DRG" ] },
+        "billing_code_type_version": { "type": "string" },
+        "billing_code": { "type": "string" },
+        "billing_class": { "enum": [ "facility", "professional" ] },
+        "account_base_class": { "enum": [ "inpatient", "outpatient", "emergency" ] },
+        "revenue_code": { "type": "number" },
+        "ndc": { "type": "string" },
+        "gross_charge": { "type": "number" },
+        "cash_rate": { "type": "number" },
+        "minimum_negotiated_rate": { "type": "number" },
+        "maximum_negotiated_rate": { "type": "number" },
+
+        "negotiated_rates": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/negotiated_rate" },
+          "default": []
+        }
+      },
+      "required": ["description", "billing_class", "account_base_class", "gross_charge", "cash_rate", "minimum_negotiated_rate", "maximum_negotiated_rate"]
+    },
+
+    "negotiated_rate": {
+      "type": "object",
+      "properties": {
+        "payer_name": { "type": "string" },
+        "plan_name": { "type": "string" },
+        "negotiated_rate": { "type": "number" },
+        "expiration_date": { "type": "string", "format": "date" }
+      },
+      "required": [ "payer_name", "plan_name", "negotiated_rate" ]
+    }
+  },
+
+
+  "type": "object",
+
+  "properties": {
+    "reporting_entity_name": { "type": "string" },
+    "reporting_entity_tin": { "type": "string" },
+    "last_update_on": { "type": "string", "format": "date" },
+    "standardcharges": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/standardcharges" },
+      "default": []
+    }
+  },
+  "required": ["reporting_entity_name", "reporting_entity_tin", "last_update_on", "standardcharges"]
+
+}

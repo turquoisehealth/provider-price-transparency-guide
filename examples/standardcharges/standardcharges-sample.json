@@ -1,0 +1,61 @@
+{
+  "reporting_entity_name": "St. Bonaventure Hospital",
+  "reporting_entity_tin": "11-1111111",
+  "last_update_on": "2020-01-01",
+  "standardcharges": [
+    {
+      "description": "Arthroplasty, knee condyle and plateau, medial and lateral compartments",
+      "billing_code_type": "CPT",
+      "billing_code_type_version": "2020",
+      "billing_code": "27447",
+      "billing_class": "facility",
+      "account_base_class": "outpatient",
+      "revenue_code": 360,
+      "gross_charge": 300.0,
+      "cash_rate": 121.11,
+      "minimum_negotiated_rate": 120.45,
+      "maximum_negotiated_rate": 121.11,
+      "negotiated_rates": [
+        {
+          "payer_name": "Insurance West",
+          "plan_name": "Insurance West PPO",
+          "negotiated_rate": 123.45,
+          "expiration_date": "2022-01-01"
+        },
+        {
+          "payer_name": "Insurance West",
+          "plan_name": "Insurance West HMO",
+          "negotiated_rate": 120.45,
+          "expiration_date": "2022-01-01"
+        }
+      ]
+    },
+    {
+      "description": "Under Repair, Revision, and/or Reconstruction Procedures on the Femur (Thigh Region) and Knee Joint",
+      "billing_code_type": "CPT",
+      "billing_code_type_version": "2020",
+      "billing_code": "27448",
+      "billing_class": "facility",
+      "account_base_class": "outpatient",
+      "revenue_code": 360,
+      "gross_charge": 20000.0,
+      "cash_rate": 10000.0,
+      "minimum_negotiated_rate": 9881.45,
+      "maximum_negotiated_rate": 12003.45,
+      "negotiated_rates": [
+        {
+          "payer_name": "Insurance West",
+          "plan_name": "Insurance West PPO",
+          "negotiated_rate": 12003.45,
+          "expiration_date": "2022-01-01"
+        },
+        {
+          "payer_name": "Insurance West",
+          "plan_name": "Insurance West HMO",
+          "negotiated_rate": 9881.45,
+          "expiration_date": "2022-01-01"
+        }
+      ]
+    }
+  ]
+}
