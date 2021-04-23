@@ -13,12 +13,12 @@ meant to expand on the official file formats maintained by CMS by extending them
 providers. 
 
 Please note that Turquoise Health has created this file format as a suggestion and is not affiliated with CMS or any
-other governmental agency. We welcome the fantastic work that CMS is doing in the area and are posting this to 
-provide feedback on where the rules may be enahanced in the future.
+other governmental agency. We welcome the fantastic work that CMS is doing in price transparency and are posting this to 
+provide feedback on how the rules may be clarified in the future.
 
 ## Overview
 
-This repository contains a set of schemas describing a data format (example implementation is encoded as JSON) for the 
+This repository contains a schema describing a data format (example implementation is encoded as JSON) for the 
 Transparency in Coverage final rule. All machine-readable files must conform to a non-proprietary, open standards format 
 that is platform independent and made available to the public without restrictions that would impede the re-use of 
 that information.
@@ -29,14 +29,16 @@ Starting January 1, 2021, hospitals in the United States are required to disclos
 for all items and services in a single machine-readable file. This requirement extends to insurance plans and issuers 
 on January 1, 2022.
 
-However while CMS requires a specific file format for insurance plan rate disclosure, no such required file format
+While CMS requires a specific file format for insurance plan rate disclosure, no required file format
 was in place for the hospital rule. This repository offers a suggested file format to fill that gap.
 
-## Keeping Up To Date
-
-Github allows for people to track and keep up-to-date with any changes for any repository. If you wish to follow and track the changes that happen on this repo, please leverage the "Watch" feature found at the top of the repository and select "All activity". This will email the user that has "watched" the specific repository.
-
 # Developer Documentation
+
+## Schema
+* [Standard Charges](https://github.com/turquoisehealth/provider-price-transparency-guide/tree/main/examples/standardcharges)
+
+## Examples
+* [Implementation Examples](https://github.com/turquoisehealth/provider-price-transparency-guide/tree/main/examples/standardcharges)
 
 ## Transport mechanism - HTTPS
 
@@ -94,9 +96,3 @@ For hospital names that have spaces, those spaces would be replaced with dashes 
 * `<standardcharges>`: The text `standardcharges`
 * `<file extension>`: Your chosen file format, preferably `json`,
 
-## Schema
-* [Standard Charges](https://github.com/turquoise-health/provider-price-transparency-guide/tree/master/schemas/standardcharges)
-
-Examples
-========
-* [Implementation Examples](https://github.com/turquoise-health/provider-price-transparency-guide/tree/master/examples)
