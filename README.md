@@ -46,7 +46,7 @@ All machine-readable files must be made available via HTTPS.
 
 ## Content type - Non-Proprietary, Open Format
 
-We suggeest the following format to meet the needs for Transparency in Coverage:
+We suggest the following format to meet the needs for Transparency in Coverage:
 
 * [JSON](https://www.json.org/)
 
