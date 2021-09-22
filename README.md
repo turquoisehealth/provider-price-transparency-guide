@@ -35,7 +35,7 @@ was in place for the hospital rule. This repository offers a suggested file form
 # Developer Documentation
 
 ## Schema
-* [Standard Charges](https://github.com/turquoisehealth/provider-price-transparency-guide/tree/main/examples/standardcharges)
+* [Standard Charges](https://github.com/turquoisehealth/provider-price-transparency-guide/tree/main/schemas/standardcharges)
 
 ## Examples
 * [Implementation Examples](https://github.com/turquoisehealth/provider-price-transparency-guide/tree/main/examples/standardcharges)
