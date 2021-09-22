@@ -1,0 +1,51 @@
+{
+  "reporting_entity_name": "St. Bonaventure Hospital",
+  "reporting_entity_medicare_id": "123456",
+  "last_update_on": "2020-01-01",
+  "standardcharges": [
+    {
+      "description": "Arthroplasty, knee condyle and plateau, medial and lateral compartments",
+      "billing_code_type": "CPT",
+      "billing_code_type_version": "2020",
+      "billing_code": "27447",
+      "billing_code_modifier": "LT",
+      "billing_class": "facility",
+      "account_base_class": "outpatient",
+      "revenue_code": 360,
+      "gross_charge": 500.0,
+      "cash_rate": 221.11,
+      "minimum_negotiated_rate": 220.45,
+      "maximum_negotiated_rate": 223.45,
+      "negotiated_rates": [
+        {
+          "payer_name": "Insurance West",
+          "plan_name": "Insurance West PPO",
+          "negotiated_rate": 223.45,
+          "expiration_date": "2022-01-01",
+          "rate_inclusive_of_ancillary_charges": true
+        },
+        {
+          "payer_name": "Insurance West",
+          "plan_name": "Insurance West HMO",
+          "negotiated_rate": 220.45,
+          "expiration_date": "2022-01-01",
+          "rate_inclusive_of_ancillary_charges": true
+        }
+      ],
+      "ancillary_charges": [
+        {
+          "description": "Anesthesia for Arthroplasty",
+          "billing_class": "facility",
+          "revenue_code": 360,
+          "gross_charge": 300.0
+        },
+        {
+          "description": "Tools for Arthroplasty",
+          "billing_class": "facility",
+          "revenue_code": 360,
+          "gross_charge": 100.0
+        }
+      ]
+    }
+  ]
+}

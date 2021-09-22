@@ -1,6 +1,6 @@
 {
   "reporting_entity_name": "St. Bonaventure Hospital",
-  "reporting_entity_tin": "11-1111111",
+  "reporting_entity_medicare_id": "123456",
   "last_update_on": "2020-01-01",
   "standardcharges": [
     {
@@ -8,6 +8,7 @@
       "billing_code_type": "CPT",
       "billing_code_type_version": "2020",
       "billing_code": "27447",
+      "billing_code_modifier": "LT",
       "billing_class": "facility",
       "account_base_class": "outpatient",
       "revenue_code": 360,
