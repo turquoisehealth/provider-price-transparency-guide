@@ -3,7 +3,7 @@
 | Field | Name | Type | Definition | Required |
 | ----- | ---- | ---- | ---------- | -------- |
 | **reporting_entity_name** | Entity Name | String | The name of the entity publishing the machine-readable file. | Yes |
-| **reporting_entity_tin** | Tax Identification Number | String | The unique identification number issued either by the Social Security Administration or by the Internal Revenue Service (IRS). | Yes |
+| **reporting_entity_medicare_id** | Medicare CCN | String | The Medicare CCN assigned to the entity. The Medicare CCN is a six character identification number assigned to Medicare and Medicaid providers (also called the Medicare/Medicaid provider number, the Online Survey, Certification And Reporting (OSCAR) number, or the Medicare Identification Number). | Yes |
 | **last_update_on** | Last Update On | String | The date in which the file was last updated. Date must be in an ISO 8601 format (e.g. YYYY-MM-DD) | Yes |
 | **standardcharges** | Standard Charges Object | Array | An array of standardcharges object types | Yes |
 

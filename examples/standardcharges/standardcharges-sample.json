@@ -1,6 +1,6 @@
 {
   "reporting_entity_name": "St. Bonaventure Hospital",
-  "reporting_entity_tin": "11-1111111",
+  "reporting_entity_medicare_id": "123456",
   "last_update_on": "2020-01-01",
   "standardcharges": [
     {

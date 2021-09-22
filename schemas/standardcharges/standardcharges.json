@@ -43,7 +43,7 @@
 
   "properties": {
     "reporting_entity_name": { "type": "string" },
-    "reporting_entity_tin": { "type": "string" },
+    "reporting_entity_medicare_id": { "type": "string" },
     "last_update_on": { "type": "string", "format": "date" },
     "standardcharges": {
       "type": "array",
@@ -51,6 +51,6 @@
       "default": []
     }
   },
-  "required": ["reporting_entity_name", "reporting_entity_tin", "last_update_on", "standardcharges"]
+  "required": ["reporting_entity_name", "reporting_entity_medicare_id", "last_update_on", "standardcharges"]
 
 }
