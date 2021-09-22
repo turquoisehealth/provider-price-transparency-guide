@@ -22,6 +22,12 @@
           "type": "array",
           "items": { "$ref": "#/definitions/negotiated_rate" },
           "default": []
+        },
+
+        "ancillary_charges": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/ancillary_charge" },
+          "default": []
         }
       },
       "required": ["description", "billing_class", "account_base_class", "gross_charge", "cash_rate", "minimum_negotiated_rate", "maximum_negotiated_rate"]
@@ -33,12 +39,27 @@
         "payer_name": { "type": "string" },
         "plan_name": { "type": "string" },
         "negotiated_rate": { "type": "number" },
-        "expiration_date": { "type": "string", "format": "date" }
+        "expiration_date": { "type": "string", "format": "date" },
+        "rate_inclusive_of_ancillary_charges": { "type": "boolean", "default": false }
       },
       "required": [ "payer_name", "plan_name", "negotiated_rate" ]
+    },
+
+    "ancillary_charge": {
+      "type": "object",
+      "properties": {
+        "description": { "type": "string" },
+        "billing_code_type": { "enum": [ "CPT", "HCPCS", "ICD", "DRG" ] },
+        "billing_code_type_version": { "type": "string" },
+        "billing_code": { "type": "string" },
+        "billing_code_modifier": { "type": "string" },
+        "billing_class": { "enum": [ "facility", "professional" ] },
+        "revenue_code": { "type": "number" },
+        "gross_charge": { "type": "number" }
+      },
+      "required": [ "description" ]
     }
   },
-
 
   "type": "object",
 
