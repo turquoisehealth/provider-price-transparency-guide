@@ -8,6 +8,7 @@
         "billing_code_type": { "enum": [ "CPT", "HCPCS", "ICD", "DRG" ] },
         "billing_code_type_version": { "type": "string" },
         "billing_code": { "type": "string" },
+        "billing_code_modifier": { "type": "string" },
         "billing_class": { "enum": [ "facility", "professional" ] },
         "account_base_class": { "enum": [ "inpatient", "outpatient", "emergency" ] },
         "revenue_code": { "type": "number" },

@@ -17,6 +17,7 @@ This type defines a standardcharges object.
 | **billing_code_type** | Billing Code Type | String | Allowed values: "CPT", "HCPCS", "ICD", and "DRG". | No |
 | **billing_code_type_version** | Billing Code Type Version | String | There might be versions associated with the `billing_code_type`. For example, Medicare is currently using ICD's version 10 | No |
 | **billing_code** | Billing Code | String | The code used by a plan or issuer or its in-network providers to identify health care items or services for purposes of billing, adjudicating, and paying claims for a covered item or service. | No |
+| **billing_code_modifier** | Billing Code Modifier | String | If applicable, a modifier code assigned to the `billing_code`. This is commonly used with `CPT` codes to clarify what service is being billed. | No |
 | **billing_class** | Billing Class | String | Allowed values: "facility", "professional" | Yes |
 | **account_base_class** | Account Base Class | String | Allowed values: "inpatient", "outpatient", "emergency" | Yes |
 | **revenue_code** | Revenue Code | Number | The hospital revenue code associated with the charge, if applicable. | No |

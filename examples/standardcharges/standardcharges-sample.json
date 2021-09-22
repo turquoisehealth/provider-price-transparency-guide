@@ -8,6 +8,7 @@
       "billing_code_type": "CPT",
       "billing_code_type_version": "2020",
       "billing_code": "27447",
+      "billing_code_modifier": "LT",
       "billing_class": "facility",
       "account_base_class": "outpatient",
       "revenue_code": 360,
